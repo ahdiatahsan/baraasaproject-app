@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bara Asa Project</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Jenis_kelamin">
+        <item>Laki - Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+</resources>

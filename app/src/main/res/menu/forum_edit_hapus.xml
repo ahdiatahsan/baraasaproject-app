@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_baseline_more_horiz_24"
+        android:orderInCategory="100"
+        android:title="Forum"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_editforum"
+                android:orderInCategory="100"
+                android:title="Ubah Forum" />
+            <item
+                android:id="@+id/action_hapusforum"
+                android:orderInCategory="100"
+                android:title="Hapus Forum" />
+        </menu>
+    </item>
+</menu>

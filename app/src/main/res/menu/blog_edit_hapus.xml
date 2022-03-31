@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_baseline_delete_24"
+        android:orderInCategory="100"
+        android:title="Blog"
+        app:showAsAction="always">
+        <menu>
+<!--            <item-->
+<!--                android:id="@+id/action_editblog"-->
+<!--                android:orderInCategory="100"-->
+<!--                android:title="Ubah Blog" />-->
+            <item
+                android:id="@+id/action_hapusblog"
+                android:orderInCategory="100"
+                android:title="Hapus Blog" />
+        </menu>
+    </item>
+</menu>

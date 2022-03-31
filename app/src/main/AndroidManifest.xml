@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.baraasa.project">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:preserveLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BaraAsaProject">
+        <activity
+            android:name="com.baraasa.project.Perekrutan.PerekrutanDetail"
+            android:exported="false" />
+        <activity
+            android:name="com.baraasa.project.fm"
+            android:exported="false" />
+        <activity
+            android:name="com.baraasa.project.Forum.Forum_Detail_Saya"
+            android:exported="true" />
+        <activity
+            android:name="com.baraasa.project.Blog.Blog_Detail_Saya"
+            android:exported="true" />
+        <activity
+            android:name="com.baraasa.project.Jurnal"
+            android:exported="true" />
+        <activity
+            android:name="com.baraasa.project.Forum.Forum_Edit"
+            android:exported="false" />
+        <activity
+            android:name="com.baraasa.project.Blog.Blog_Edit"
+            android:exported="false" />
+        <activity
+            android:name="com.baraasa.project.Profil.EditPhotoProfil"
+            android:exported="false" />
+        <activity
+            android:name="com.baraasa.project.Profil.EditPassword"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.Perekrutan.PerekrutanTambah"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.Event.Event_Tambah"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.Profil.EditProfil"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.Sertifikat.Sertifikat_Detail"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.Sertifikat.Sertifikat"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.Event.Event"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.Forum.Forum_Tambah"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.Blog.Blog_Tambah"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.Forum.Forum_Saya"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.Blog.Blog_Saya"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.About"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.Forum.Forum_Detail"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.Register"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.Login"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.OnBoarding.IntroActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.SplashScreen"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baraasa.project.Blog.Blog_Detail"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.baraasa.project.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

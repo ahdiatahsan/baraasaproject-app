@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.baraasa.project.Profil.EditProfil">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarEditprofile"
+            layout="@layout/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/lnTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:elevation="12dp"
+                app:cardCornerRadius="60dp">
+
+                <ImageView
+                    android:id="@+id/imgeeditfoto"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/blank"/>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Nama Lengkap"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editnama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_rectangle_outline"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Masukkan Nama"
+                    android:inputType="textShortMessage"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#818181"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Jenis Kelamin"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/editspinnerjkl"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/style_spinner"
+                    android:padding="10dp"
+                    android:popupTheme="@style/Toolbar" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Tempat Lahir"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editt4lhr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_rectangle_outline"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Masukkan Tempat Lahir"
+                    android:inputType="textShortMessage"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#818181"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Tanggal Lahir"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edittgllhr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_rectangle_outline"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Masukkan Tanggal Lahir"
+                    android:inputType="textShortMessage"
+                    android:padding="10dp"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textColorHint="#818181"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Alamat"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editalamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_rectangle_outline"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Masukkan Alamat"
+                    android:maxLines="5"
+                    android:overScrollMode="always"
+                    android:padding="10dp"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textColorHint="#818181"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Nomor Telpon"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editnotlpn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_rectangle_outline"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Masukkan Nomor Telpon"
+                    android:inputType="phone"
+                    android:maxLength="13"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#818181"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_rectangle_outline"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Masukkan Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#818181"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="16dp"-->
+                <!--                    android:fontFamily="@font/poppins"-->
+                <!--                    android:text="Password"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textSize="14sp"-->
+                <!--                    android:textStyle="bold" />-->
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/editpass"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="8dp"-->
+                <!--                    android:background="@drawable/shape_rectangle_outline"-->
+                <!--                    android:fontFamily="@font/poppins"-->
+                <!--                    android:hint="Masukkan Password"-->
+                <!--                    android:inputType="textPassword"-->
+                <!--                    android:padding="10dp"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textColorHint="#818181"-->
+                <!--                    android:textSize="14sp" />-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="16dp"-->
+                <!--                    android:fontFamily="@font/poppins"-->
+                <!--                    android:text="Konfirmasi Password"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textSize="14sp"-->
+                <!--                    android:textStyle="bold" />-->
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/editpasskonfir"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="8dp"-->
+                <!--                    android:background="@drawable/shape_rectangle_outline"-->
+                <!--                    android:fontFamily="@font/poppins"-->
+                <!--                    android:hint="Masukkan Konfirmasi Password"-->
+                <!--                    android:inputType="textPassword"-->
+                <!--                    android:padding="10dp"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textColorHint="#818181"-->
+                <!--                    android:textSize="14sp" />-->
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/btn_daftar"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:layout_marginVertical="16dp"-->
+                <!--                    android:fontFamily="@font/poppins"-->
+                <!--                    android:text="Daftar"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:background="@drawable/btn_gradient_style"-->
+                <!--                    android:textAllCaps="false"/>-->
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

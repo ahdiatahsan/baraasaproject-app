@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/icon_post_add"
+        android:orderInCategory="100"
+        android:title="tambah"
+        app:showAsAction="always">
+        <menu>
+<!--            <item-->
+<!--                android:id="@+id/tambahblog"-->
+<!--                android:title="Tambah Blog" />-->
+            <item
+                android:id="@+id/tambahforum"
+                android:title="Tambah Forum" />
+        </menu>
+    </item>
+
+</menu>

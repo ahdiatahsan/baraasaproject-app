@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.baraasa.project.Menu.Search_Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarsearch"
+                layout="@layout/toolbarumum" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!--        <SearchView-->
+        <!--            android:id="@+id/sv"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginHorizontal="10dp"-->
+        <!--            android:layout_marginVertical="10dp"-->
+        <!--            android:background="@drawable/shape_rectangle_outline"-->
+        <!--            android:iconifiedByDefault="false"-->
+        <!--            android:queryHint="Pencarian" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/txt_searchtext"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:layout_marginVertical="10dp"-->
+<!--            android:background="@drawable/shape_rectangle_outline"-->
+<!--            android:fontFamily="@font/poppins"-->
+<!--            android:hint="Pencarian"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="14sp"-->
+<!--            android:drawableRight="@drawable/icon_search"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textColorHint="#818181"-->
+<!--            android:textCursorDrawable="@null" />-->
+        <!--        android:drawableRight="@drawable/ic_search"-->
+        <!--        android:paddingLeft="15dp"-->
+        <!--        android:paddingRight="18dp"-->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabsearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:tabIndicatorColor="#FF9800"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="#FF9800"
+                app:tabTextColor="#818181">
+
+            </com.google.android.material.tabs.TabLayout>
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+</FrameLayout>

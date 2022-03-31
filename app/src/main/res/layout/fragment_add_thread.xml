@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context="com.baraasa.project.ViewPager.AddThread">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Judul"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_rectangle_outline"
+        android:fontFamily="@font/poppins"
+        android:hint="Masukkan Judul"
+        android:inputType="textShortMessage"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#818181"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Pertanyaan"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_rectangle_outline"
+        android:fontFamily="@font/poppins"
+        android:hint="Masukkan Pertanyaan"
+        android:minLines="3"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#818181"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/Addgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="GO"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

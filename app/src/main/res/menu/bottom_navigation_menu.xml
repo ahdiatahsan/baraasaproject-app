@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/icon_home"
+        android:title="Beranda"
+        app:cnb_backgroundColor="#F7A052"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff" />
+
+
+    <!--    <item-->
+    <!--        android:id="@+id/post"-->
+    <!--        android:icon="@drawable/icon_post_add"-->
+    <!--        android:title="Posting"-->
+    <!--        app:cnb_backgroundColor="#F7A052"-->
+    <!--        app:cnb_iconColor="#ffffff"-->
+    <!--        app:cnb_textColor="#ffffff"/>-->
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/icon_profile"
+        android:title="Profil"
+        app:cnb_backgroundColor="#F7A052"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff" />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/info"
+        android:title="Tentang"
+        app:cnb_backgroundColor="#F7A052"
+        app:cnb_iconColor="#ffffff"
+        app:cnb_textColor="#ffffff" />
+</menu>
